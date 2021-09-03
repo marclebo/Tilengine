@@ -89,7 +89,7 @@ typedef enum
 	BLEND_ADD,		/*!< color is always brighter (simulate light effects) */
 	BLEND_SUB,		/*!< color is always darker (simulate shadow effects) */
 	BLEND_MOD,		/*!< color is always darker (simulate shadow effects) */
-	BLEND_CUSTOM,	/*!< user provided blend function with TLN_SetCustomBlendFunction() */
+	BLEND_TILECUSTOM,	/*!< user provided blend function with TLN_SetCustomBlendFunction() */
 	MAX_BLEND,
 	BLEND_MIX = BLEND_MIX50
 }

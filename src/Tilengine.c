@@ -602,7 +602,7 @@ bool TLN_SetBGPalette (TLN_Palette palette)
 
 /*!
  * \brief
- * Sets custom blend function to use when BLEND_CUSTOM mode is selected
+ * Sets custom blend function to use when BLEND_TILECUSTOM mode is selected
  * \param blend_function
  * pointer to a user-provided function that takes two parameters: source component intensity,
  * destination component intensity, and returns the desired intensity. This function is
@@ -616,7 +616,7 @@ bool TLN_SetBGPalette (TLN_Palette palette)
  */
 void TLN_SetCustomBlendFunction (uint8_t (*blend_function)(uint8_t src, uint8_t dst))
 {
-	uint8_t* table = SelectBlendTable (BLEND_CUSTOM);
+	uint8_t* table = SelectBlendTable (BLEND_TILECUSTOM);
 	int a,b;
 
 	if (blend_function == NULL)

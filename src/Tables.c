@@ -46,7 +46,7 @@ bool CreateBlendTables (void)
 			_blend_tables[BLEND_ADD   ][offset] = (a+b) > 255? 255 : (a+b);
 			_blend_tables[BLEND_SUB   ][offset] = (a-b) < 0? 0 : (a-b);
 			_blend_tables[BLEND_MOD   ][offset] = (a*b)/255;
-			_blend_tables[BLEND_CUSTOM][offset] = a;
+			_blend_tables[BLEND_TILECUSTOM][offset] = a;
 		}
 	}
 	return true;
